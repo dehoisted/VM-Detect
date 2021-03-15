@@ -10,6 +10,7 @@ void toLowerCase(char* ptr, unsigned int len) {
     }
 }
 
+// Easy to improve yourself
 bool isVM()
 {
     std::string sysManufacturer, sysName;
