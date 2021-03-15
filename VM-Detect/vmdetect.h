@@ -29,7 +29,7 @@ bool isVM()
 
     toLowerCase(buf, strlen(buf));
     sysName = buf;
-
+                                             //add more strings to make it better :)
     if (ret == ERROR_SUCCESS && (sysName.find("vmware") != std::string::npos || sysName.find("virtualbox") != std::string::npos)) {
         return 1;
     }
