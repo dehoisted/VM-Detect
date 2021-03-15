@@ -20,7 +20,7 @@ bool isVM()
     ret = RegGetValueA(HKEY_LOCAL_MACHINE, "SYSTEM\\CurrentControlSet\\Control\\SystemInformation", "SystemManufacturer", RRF_RT_ANY, NULL, &buf[0], &sz);
     toLowerCase(buf, strlen(buf));
     sysManufacturer = buf;
-
+ 
     if (ret == ERROR_SUCCESS && (sysManufacturer.find("vmware") != std::string::npos || sysManufacturer.find("innotek gmbh") != std::string::npos)) {
         return 1;
     }
